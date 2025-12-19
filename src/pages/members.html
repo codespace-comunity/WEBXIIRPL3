@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members | WebXIIRPL3</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/animations.css" />
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-b from-[#0f1225] via-[#0b0d1a] to-black text-white"
+  >
+    <app-navbar></app-navbar>
+
+    <div class="page">
+      <main class="max-w-7xl mx-auto px-6 py-24">
+        <!-- HEADER -->
+        <header class="mb-16">
+          <h1 class="text-4xl font-bold mb-4">Class Members</h1>
+          <p class="text-white/60 max-w-xl">
+            XIIRPL3 is built by collaboration, creativity, and strong teamwork.
+          </p>
+        </header>
+
+        <!-- FILTER -->
+        <div class="flex flex-wrap gap-4 mb-12">
+          <button data-role="all" class="filter-btn active">All</button>
+          <button data-role="Leader" class="filter-btn">Leader</button>
+          <button data-role="Secretary" class="filter-btn">Secretary</button>
+          <button data-role="Treasurer" class="filter-btn">Treasurer</button>
+          <button data-role="Vice Leader" class="filter-btn">
+            Vice Leader
+          </button>
+          <button data-role="MOST HANDSOME" class="filter-btn">
+            MOSTHANDSOME
+          </button>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="mb-8">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Search member name..."
+            class="w-full max-w-md px-5 py-3 rounded-full bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-400/40"
+          />
+        </div>
+
+        <!-- MEMBERS GRID -->
+        <section
+          id="membersGrid"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+        ></section>
+      </main>
+    </div>
+    <script src="/src/js/footer.js"></script>
+
+    <app-footer></app-footer>
+    <script src="../js/navbar.js"></script>
+
+    <script src="../../src/js/members.js"></script>
+
+    <script src="../js/page-transition.js"></script>
+  </body>
+</html>

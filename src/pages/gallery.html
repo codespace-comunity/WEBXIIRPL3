@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | WebXIIRPL3</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/animations.css" />
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-b from-[#0f1225] via-[#0b0d1a] to-black text-white"
+  >
+    <app-navbar></app-navbar>
+    <div class="page">
+      <main class="max-w-7xl mx-auto px-6 py-24">
+        <!-- HEADER -->
+        <header class="mb-16">
+          <h1 class="text-4xl font-bold mb-4">Class Gallery</h1>
+          <p class="text-white/60 max-w-xl">
+            Moments we share, memories we build together.
+          </p>
+        </header>
+
+        <!-- FILTER -->
+        <div class="flex flex-wrap gap-4 mb-12">
+          <button data-category="all" class="filter-btn active">All</button>
+          <button data-category="activity" class="filter-btn">
+            Activities
+          </button>
+          <button data-category="event" class="filter-btn">Events</button>
+          <button data-category="daily" class="filter-btn">Daily Life</button>
+        </div>
+
+        <!-- GALLERY GRID -->
+        <section
+          id="galleryGrid"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5"
+        ></section>
+      </main>
+    </div>
+
+    <!-- MODAL -->
+    <div
+      id="imageModal"
+      class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center z-50"
+    >
+      <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-xl" />
+    </div>
+
+    <script src="/src/js/footer.js"></script>
+
+    <app-footer></app-footer>
+
+    <script src="../js/gallery.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/page-transition.js"></script>
+  </body>
+</html>

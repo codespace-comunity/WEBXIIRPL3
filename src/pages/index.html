@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../public/images/icons/Venom.png"
+    />
+    <link rel="stylesheet" href="/src/css/animations.css" />
+
+    <title>XII RPL 3</title>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-b from-[#0f1225] via-[#0b0d1a] to-black"
+  >
+    <div id="page-transition"></div>
+    <app-navbar></app-navbar>
+    <div class="bg-transparent h-40"></div>
+
+    <div class="page">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- LEFT CONTENT -->
+          <div>
+            <h1
+              class="mb-4 text-4xl text-white font-bold tracking-tight md:text-5xl lg:text-6xl"
+            >
+              One Voice, One Choice <br />
+              One Family
+            </h1>
+
+            <p class="text-lg text-white/80 font-normal lg:text-xl">
+              Different backgrounds, different strengths, but one class that
+              learns,
+              <br class="hidden md:block" />
+              struggles, and succeeds together.
+            </p>
+
+            <h2
+              class="mt-16 text-xl text-white font-bold tracking-tight lg:text-2xl"
+            >
+              XII RPL 3<br />
+              <span class="text-white/60 font-medium">2025 / 2026</span>
+            </h2>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="relative flex justify-center lg:justify-end">
+            <!-- glow -->
+            <div
+              class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-purple-500/30 via-cyan-400/20 to-blue-500/30 blur-2xl"
+            ></div>
+
+            <!-- card -->
+            <div
+              class="relative w-full max-w-md rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6"
+            >
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="h-12 w-12 rounded-xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-bold"
+                >
+                  RPL
+                </div>
+                <div>
+                  <p class="text-white font-semibold">
+                    Rekayasa Perangkat Lunak
+                  </p>
+                  <p class="text-white/60 text-sm">
+                    Learn • Build • Collaborate
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="flex justify-between text-white/80">
+                  <span>Students</span>
+                  <span class="font-semibold text-white">± 38</span>
+                </div>
+                <div class="flex justify-between text-white/80">
+                  <span>Projects</span>
+                  <span class="font-semibold text-white">Ongoing</span>
+                </div>
+                <div class="flex justify-between text-white/80">
+                  <span>Focus</span>
+                  <span class="font-semibold text-white">Web & Software</span>
+                </div>
+              </div>
+
+              <div
+                class="mt-6 rounded-xl bg-black/40 p-4 text-sm text-white/70 italic"
+              >
+                “A class is not just a room, it’s a family.”
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/js/footer.js"></script>
+
+    <app-footer></app-footer>
+
+    <script src="/src/js/page-transition.js"></script>
+    <script src="/src/js/navbar.js"></script>
+  </body>
+</html>

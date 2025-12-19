@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../public/images/icons/Venom.png"
+    />
+    <link rel="stylesheet" href="/src/css/animations.css" />
+
+    <title>Schedule | XII RPL 3</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-b from-[#0f1225] via-[#0b0d1a] to-black text-white"
+  >
+    <app-navbar></app-navbar>
+    <div class="h-32"></div>
+
+    <div class="page">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- HEADER -->
+        <div
+          class="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6"
+        >
+          <div>
+            <h1 class="text-4xl font-bold md:text-5xl lg:text-6xl">
+              Class Schedule
+            </h1>
+            <p class="mt-4 text-white/70 max-w-2xl">
+              Weekly learning schedule of XII RPL 3. Active subject is
+              highlighted automatically.
+            </p>
+          </div>
+
+          <!-- DATE -->
+          <div id="todayDate" class="text-white/70 text-sm md:text-base"></div>
+        </div>
+
+        <!-- GRID -->
+        <div
+          id="scheduleGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        ></div>
+      </div>
+    </div>
+    <script src="/src/js/footer.js"></script>
+
+    <app-footer></app-footer>
+    <!-- JS -->
+    <script src="/src/js/schedule.js"></script>
+    <script src="/src/js/navbar.js"></script>
+    <script src="/src/js/page-transition.js"></script>
+  </body>
+</html>
