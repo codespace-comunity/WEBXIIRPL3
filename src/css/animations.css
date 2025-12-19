@@ -25,3 +25,34 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(6px);
+}
+
+#menu-btn.open .hamburger {
+  background: transparent;
+}
+
+#menu-btn.open .hamburger::before {
+  transform: rotate(45deg);
+}
+
+#menu-btn.open .hamburger::after {
+  transform: rotate(-45deg);
+}
