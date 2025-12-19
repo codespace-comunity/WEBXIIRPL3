@@ -5,7 +5,7 @@ const members = [
   {
     name: "Agung Nugroho",
     role: "member",
-    description: "Comedian and TPA Admin",
+    description: "Comedian and Megumi kato boyfriend",
     photo: "",
   },
   {
